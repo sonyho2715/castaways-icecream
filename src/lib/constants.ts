@@ -19,8 +19,10 @@ export const SITE = {
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Menu", href: "#menu" },
-  { label: "Story", href: "#story" },
-  { label: "Visit", href: "#visit" },
-  { label: "Catering", href: "#catering" },
+  { label: "Menu", href: "/#menu" },
+  { label: "Flavors", href: "/flavors" },
+  { label: "Story", href: "/#story" },
+  { label: "Catering", href: "/catering" },
+  { label: "Cakes", href: "/ice-cream-cakes" },
+  { label: "Visit", href: "/#visit" },
 ] as const;

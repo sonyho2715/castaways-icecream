@@ -3,6 +3,7 @@ import { socialLinks } from "@/data/social";
 import { locations } from "@/data/locations";
 import { NAV_LINKS } from "@/lib/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const moiliili = locations[0];
@@ -26,10 +27,10 @@ export default function Footer() {
           </h2>
         </div>
 
-        {/* 3 columns */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        {/* 5 columns */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-12 mb-16">
           {/* Column 1: Tagline + Social */}
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               Super-premium homemade ice cream, handcrafted in small batches
               with real ingredients. Made with aloha in Honolulu, Hawai&#x02BB;i.
@@ -71,18 +72,84 @@ export default function Footer() {
             <ul className="space-y-3">
               {NAV_LINKS.map((link) => (
                 <li key={link.label}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-white/80 hover:text-primary transition-colors text-sm"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Column 3: Hours */}
+          {/* Column 3: Order */}
+          <div>
+            <h3 className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/40 mb-4">
+              Order
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/catering"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
+                >
+                  Catering
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ice-cream-cakes"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
+                >
+                  Ice Cream Cakes
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/gift-cards"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
+                >
+                  Gift Cards
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 4: More */}
+          <div>
+            <h3 className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/40 mb-4">
+              More
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/press"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
+                >
+                  Press
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="tel:+18087441001"
+                  className="text-white/80 hover:text-primary transition-colors text-sm"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 5: Hours */}
           <div>
             <h3 className="text-[10px] font-bold tracking-[0.2em] uppercase text-white/40 mb-4">
               Hours

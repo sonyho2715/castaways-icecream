@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   const [hidden, setHidden] = useState(false);
@@ -22,7 +23,7 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3">
+        <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/castaways-logo.jpg"
             alt="Castaways Ice Cream"
@@ -33,7 +34,7 @@ export default function Navbar() {
           <span className="font-[family-name:var(--font-playfair)] font-black text-3xl tracking-tight">
             CASTAWAYS<span className="text-accent">.</span>
           </span>
-        </a>
+        </Link>
         <button
           className="p-2 hover:bg-slate200 rounded-xl transition-colors"
           aria-label="Open menu"

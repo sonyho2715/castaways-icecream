@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import FloatingPillNav from "@/components/layout/FloatingPillNav";
 import MobileMenu from "@/components/layout/MobileMenu";
 import Footer from "@/components/layout/Footer";
+import ChatWidget from "@/components/ChatWidget";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -42,6 +43,41 @@ export const metadata: Metadata = {
   },
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "IceCreamShop",
+  "name": "Castaways Ice Cream",
+  "description": "Super-premium homemade ice cream in Mo\u02BBili\u02BBili, Honolulu. 30+ rotating flavors, fresh waffle cones, made in small batches.",
+  "url": "https://castawaysicecream.vercel.app",
+  "telephone": "+18087441001",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2346 South King St",
+    "addressLocality": "Honolulu",
+    "addressRegion": "HI",
+    "postalCode": "96826",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 21.2965,
+    "longitude": -157.8324
+  },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "14:00", "closes": "22:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday"], "opens": "14:00", "closes": "23:59" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "12:00", "closes": "23:59" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday"], "opens": "12:00", "closes": "22:00" }
+  ],
+  "priceRange": "$$",
+  "servesCuisine": "Ice Cream",
+  "image": "https://castawaysicecream.vercel.app/images/castaways-logo.jpg",
+  "sameAs": [
+    "https://www.instagram.com/castawaysicecream/",
+    "https://www.yelp.com/biz/castaways-ice-cream-honolulu"
+  ]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -49,6 +85,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body
         className={`${playfair.variable} ${jakarta.variable} font-[family-name:var(--font-jakarta)] antialiased bg-cream text-secondary`}
       >
@@ -58,6 +100,7 @@ export default function RootLayout({
         <MobileMenu />
         {children}
         <Footer />
+        <ChatWidget />
       </body>
     </html>
   );

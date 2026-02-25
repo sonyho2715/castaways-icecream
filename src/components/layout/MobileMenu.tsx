@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { X, Instagram } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 import { socialLinks } from "@/data/social";
+import Link from "next/link";
 
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function MobileMenu() {
 
       <div className="flex flex-col items-start justify-center h-full px-12 gap-4">
         {NAV_LINKS.map((link, i) => (
-          <a
+          <Link
             key={link.label}
             href={link.href}
             onClick={() => setOpen(false)}
@@ -58,8 +59,40 @@ export default function MobileMenu() {
             style={{ transitionDelay: `${i * 80}ms` }}
           >
             {link.label}
-          </a>
+          </Link>
         ))}
+
+        {/* Extra links */}
+        <div className="mt-6 pt-6 border-t border-white/10 flex flex-col gap-3">
+          <Link
+            href="/ice-cream-cakes"
+            onClick={() => setOpen(false)}
+            className="text-white/70 text-lg font-semibold hover:text-primary transition-colors"
+          >
+            Ice Cream Cakes
+          </Link>
+          <Link
+            href="/gift-cards"
+            onClick={() => setOpen(false)}
+            className="text-white/70 text-lg font-semibold hover:text-primary transition-colors"
+          >
+            Gift Cards
+          </Link>
+          <Link
+            href="/blog"
+            onClick={() => setOpen(false)}
+            className="text-white/70 text-lg font-semibold hover:text-primary transition-colors"
+          >
+            Blog
+          </Link>
+          <Link
+            href="/press"
+            onClick={() => setOpen(false)}
+            className="text-white/70 text-lg font-semibold hover:text-primary transition-colors"
+          >
+            Press
+          </Link>
+        </div>
       </div>
 
       <div className="absolute bottom-12 left-12 flex items-center gap-6">

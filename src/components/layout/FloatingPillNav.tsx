@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { ShoppingBag } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function FloatingPillNav() {
   const [visible, setVisible] = useState(false);
@@ -25,8 +26,8 @@ export default function FloatingPillNav() {
       }`}
     >
       <div className="bg-white/90 backdrop-blur-xl rounded-full shadow-2xl px-8 py-3.5 flex items-center gap-8">
-        <a
-          href="#"
+        <Link
+          href="/"
           className="flex items-center gap-2"
         >
           <Image
@@ -39,17 +40,17 @@ export default function FloatingPillNav() {
           <span className="font-[family-name:var(--font-playfair)] font-black text-xl">
             C<span className="text-accent">.</span>
           </span>
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center gap-6">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="text-[10px] uppercase tracking-widest font-bold text-secondary hover:text-primary transition-colors"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
 
