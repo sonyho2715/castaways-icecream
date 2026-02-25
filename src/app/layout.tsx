@@ -4,6 +4,7 @@ import "./globals.css";
 import AnnouncementBar from "@/components/layout/AnnouncementBar";
 import Navbar from "@/components/layout/Navbar";
 import FloatingPillNav from "@/components/layout/FloatingPillNav";
+import FloatingMenuButton from "@/components/layout/FloatingMenuButton";
 import MobileMenu from "@/components/layout/MobileMenu";
 import Footer from "@/components/layout/Footer";
 import ChatWidget from "@/components/ChatWidget";
@@ -98,6 +99,7 @@ export default function RootLayout({
         <AnnouncementBar />
         <Navbar />
         <FloatingPillNav />
+        <FloatingMenuButton />
         <MobileMenu />
         {children}
         <Footer />

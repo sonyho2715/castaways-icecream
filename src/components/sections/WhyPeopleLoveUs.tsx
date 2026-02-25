@@ -72,7 +72,7 @@ export default function WhyPeopleLoveUs() {
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 33vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-10 text-white">
               <h3 className="font-[family-name:var(--font-playfair)] text-2xl font-black mb-1">
                 Waffle cones &amp; bowls
