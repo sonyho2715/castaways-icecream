@@ -4,10 +4,9 @@ export const socialLinks = {
   threads: "https://www.threads.com/@castawaysicecream",
   tiktok: "https://www.tiktok.com/@castawaysicecream",
   yelp: "https://www.yelp.com/biz/castaways-ice-cream-honolulu",
-  // TODO: Facebook page URL not confirmed in research
-  facebook: "https://www.facebook.com/castawaysicecream",
+  facebook: "", // Not confirmed
   google:
-    "https://www.google.com/maps/place/Castaways+Ice+Cream/@21.292,-157.832,17z",
+    "https://maps.google.com/?q=2346+South+King+St+Honolulu+HI",
 } as const;
 
 export const pressMentions = [

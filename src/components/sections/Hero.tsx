@@ -18,17 +18,18 @@ export default function Hero() {
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
               </span>
               <span className="text-xs font-bold tracking-wide uppercase text-secondary/70">
-                Open now in Moiliili
+                Open now in Mo&#x02BB;ili&#x02BB;ili
               </span>
             </div>
 
             {/* Headline */}
             <h1 className="font-[family-name:var(--font-playfair)] text-5xl sm:text-7xl md:text-8xl lg:text-[110px] font-black leading-[0.85] tracking-tight mb-8">
-              Super-premium
+              Not store-bought.
               <br />
-              <span className="italic text-primary">homemade</span>
+              Not factory-made.
               <br />
-              ice cream<span className="text-primary">.</span>
+              <span className="italic text-primary">Homemade</span>
+              <span className="text-accent">.</span>
             </h1>
 
             {/* Subtitle */}
@@ -69,8 +70,8 @@ export default function Hero() {
 
               <div className="relative aspect-[4/5] rounded-[28px] overflow-hidden">
                 <Image
-                  src="/images/hero-icecream.jpg"
-                  alt="Colorful ice cream scoops in a cone"
+                  src="/images/yelp/photo-10-food-pandan.jpg"
+                  alt="Pandan coconut ice cream scoops at Castaways"
                   fill
                   className="object-cover"
                   priority
@@ -85,7 +86,7 @@ export default function Hero() {
                     <Star
                       key={i}
                       size={12}
-                      className="fill-primary text-primary"
+                      className="fill-accent text-accent"
                     />
                   ))}
                 </div>

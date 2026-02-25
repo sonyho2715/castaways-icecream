@@ -2,6 +2,7 @@ import { Instagram } from "lucide-react";
 import { socialLinks } from "@/data/social";
 import { locations } from "@/data/locations";
 import { NAV_LINKS } from "@/lib/constants";
+import Image from "next/image";
 
 export default function Footer() {
   const moiliili = locations[0];
@@ -9,10 +10,19 @@ export default function Footer() {
   return (
     <footer className="bg-secondary text-white rounded-t-[60px] md:rounded-t-[100px] pt-20 md:pt-32 pb-8 md:pb-12 mt-20">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Massive logo */}
+        {/* Logo + massive text */}
         <div className="text-center mb-16 md:mb-24">
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/images/castaways-logo.jpg"
+              alt="Castaways Ice Cream"
+              width={80}
+              height={80}
+              className="rounded-full object-cover"
+            />
+          </div>
           <h2 className="font-[family-name:var(--font-playfair)] text-[15vw] md:text-[12vw] font-black italic leading-none tracking-tight">
-            CASTAWAYS<span className="text-primary">.</span>
+            CASTAWAYS<span className="text-accent">.</span>
           </h2>
         </div>
 
@@ -22,7 +32,7 @@ export default function Footer() {
           <div>
             <p className="text-white/60 text-sm leading-relaxed mb-6">
               Super-premium homemade ice cream, handcrafted in small batches
-              with real ingredients. Made with aloha in Honolulu, Hawaiʻi.
+              with real ingredients. Made with aloha in Honolulu, Hawai&#x02BB;i.
             </p>
             <div className="flex items-center gap-4">
               <a
@@ -80,14 +90,18 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-white/80">
               <li>
                 <span className="text-white/40">Mon-Thu:</span>{" "}
-                {moiliili.hours.monThurs}
+                {moiliili.hours.monday}
               </li>
               <li>
-                <span className="text-white/40">Fri-Sat:</span>{" "}
-                {moiliili.hours.friSat}
+                <span className="text-white/40">Fri:</span>{" "}
+                {moiliili.hours.friday}
               </li>
               <li>
-                <span className="text-white/40">Sunday:</span>{" "}
+                <span className="text-white/40">Sat:</span>{" "}
+                {moiliili.hours.saturday}
+              </li>
+              <li>
+                <span className="text-white/40">Sun:</span>{" "}
                 {moiliili.hours.sunday}
               </li>
             </ul>

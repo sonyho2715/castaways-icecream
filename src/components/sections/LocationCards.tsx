@@ -1,5 +1,6 @@
 import { MapPin, Phone, Clock, ExternalLink } from "lucide-react";
 import { locations } from "@/data/locations";
+import Image from "next/image";
 
 export default function LocationCards() {
   return (
@@ -11,21 +12,32 @@ export default function LocationCards() {
             Visit Us
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-black mb-4">
-            Come say aloha<span className="text-primary">.</span>
+            Come say aloha<span className="text-accent">.</span>
           </h2>
           <p className="text-secondary/50 max-w-md mx-auto">
-            Two locations in Honolulu. Walk in, try unlimited free samples, and
-            find your new favorite flavor.
+            Walk in, try unlimited free samples, and find your new favorite
+            flavor. Near UH M&#x0101;noa campus.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="max-w-2xl mx-auto">
           {locations.map((loc) => (
             <div
               key={loc.id}
               className="bg-white rounded-[40px] p-8 md:p-12 hover:shadow-2xl hover:shadow-secondary/5 transition-all duration-500 group"
             >
+              {/* Store photo */}
+              <div className="relative aspect-video rounded-[24px] overflow-hidden mb-8">
+                <Image
+                  src="/images/yelp/photo-05-interior-2.jpg"
+                  alt="Inside Castaways Ice Cream"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 600px"
+                />
+              </div>
+
               {/* Header */}
               <div className="flex items-center gap-3 mb-6">
                 <div
@@ -43,7 +55,7 @@ export default function LocationCards() {
               </div>
 
               {/* Address */}
-              <div className="space-y-3 mb-8 text-sm text-secondary/60">
+              <div className="space-y-3 mb-6 text-sm text-secondary/60">
                 <div className="flex items-start gap-3">
                   <MapPin size={14} className="shrink-0 mt-0.5 text-secondary/30" />
                   <span>
@@ -64,12 +76,33 @@ export default function LocationCards() {
                 <div className="flex items-start gap-3">
                   <Clock size={14} className="shrink-0 mt-0.5 text-secondary/30" />
                   <div>
-                    <p>Mon-Thu: {loc.hours.monThurs}</p>
-                    <p>Fri-Sat: {loc.hours.friSat}</p>
+                    <p>Mon-Thu: {loc.hours.monday}</p>
+                    <p>Fri: {loc.hours.friday}</p>
+                    <p>Sat: {loc.hours.saturday}</p>
                     <p>Sun: {loc.hours.sunday}</p>
                   </div>
                 </div>
               </div>
+
+              {/* Student Discount */}
+              {loc.studentDiscount && (
+                <div className="mb-8 p-4 rounded-2xl bg-slate100 border border-primary/20">
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl">&#x1F393;</span>
+                    <div>
+                      <p className="font-bold text-secondary text-sm">
+                        {loc.studentDiscount.school}
+                      </p>
+                      <p className="text-primary font-black text-lg">
+                        {loc.studentDiscount.offer}
+                      </p>
+                      <p className="text-slate-500 text-xs mt-1">
+                        {loc.studentDiscount.requirement}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {/* Map */}
               <div className="rounded-[24px] overflow-hidden mb-6 aspect-video bg-slate200">
@@ -90,8 +123,7 @@ export default function LocationCards() {
                 href={loc.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 w-full justify-center py-4 rounded-full font-bold text-sm tracking-wide text-white transition-all hover:shadow-lg"
-                style={{ backgroundColor: loc.accentColor }}
+                className="inline-flex items-center gap-2 w-full justify-center py-4 rounded-full font-bold text-sm tracking-wide text-white transition-all hover:shadow-lg bg-primary hover:bg-primary/90"
               >
                 Get Directions
                 <ExternalLink size={14} />

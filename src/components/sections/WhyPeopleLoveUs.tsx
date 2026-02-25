@@ -10,7 +10,7 @@ export default function WhyPeopleLoveUs() {
             Why people love us
           </p>
           <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-5xl font-black">
-            Not your average scoop<span className="text-primary">.</span>
+            Not your average scoop<span className="text-accent">.</span>
           </h2>
         </div>
 
@@ -19,7 +19,7 @@ export default function WhyPeopleLoveUs() {
           {/* Card 1: Homemade (2-col) */}
           <div className="md:col-span-2 relative bg-white rounded-[32px] p-10 overflow-hidden group hover:scale-[1.02] transition-transform duration-500">
             <div className="absolute top-6 right-6 text-8xl opacity-5 select-none">
-              🍦
+              &#x1F366;
             </div>
             <div className="relative z-10 flex flex-col justify-between h-full">
               <div>
@@ -27,7 +27,7 @@ export default function WhyPeopleLoveUs() {
                   The difference
                 </p>
                 <h3 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-black mb-3">
-                  Homemade in-house<span className="text-primary">.</span>
+                  Homemade in-house<span className="text-accent">.</span>
                 </h3>
                 <p className="text-secondary/50 text-sm max-w-md leading-relaxed">
                   Every batch is made from scratch in our shop with a blast
@@ -38,8 +38,8 @@ export default function WhyPeopleLoveUs() {
             </div>
             <div className="absolute bottom-0 right-0 w-48 h-48 md:w-64 md:h-64 rounded-tl-[40px] overflow-hidden opacity-80">
               <Image
-                src="/images/scoop-close.jpg"
-                alt="Close up of ice cream scoop"
+                src="/images/yelp/photo-08-food-scoops.jpg"
+                alt="Close up of ice cream scoops"
                 fill
                 className="object-cover"
                 sizes="256px"
@@ -66,8 +66,8 @@ export default function WhyPeopleLoveUs() {
           {/* Card 3: Waffle cones */}
           <div className="relative rounded-[32px] overflow-hidden group hover:scale-[1.02] transition-transform duration-500">
             <Image
-              src="/images/waffle-cone.jpg"
-              alt="Fresh waffle cone"
+              src="/images/yelp/photo-14-food-trio.jpg"
+              alt="Ice cream scoops with waffle cone"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 33vw"
@@ -90,7 +90,7 @@ export default function WhyPeopleLoveUs() {
             </p>
             <div>
               <h3 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-black mb-4">
-                Friendly, family-run vibe<span className="text-primary">.</span>
+                Friendly, family-run vibe<span className="text-accent">.</span>
               </h3>
               <blockquote className="text-secondary/50 text-base italic leading-relaxed border-l-2 border-primary pl-6 max-w-lg">
                 &ldquo;Family-run with so much aloha. The owner clearly cares about

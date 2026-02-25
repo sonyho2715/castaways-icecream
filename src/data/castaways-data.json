@@ -1,21 +1,30 @@
 {
   "business": {
     "name": "Castaways Ice Cream",
-    "tagline": "Super-premium homemade ice cream",
+    "tagline": "Not store-bought. Not factory-made. Homemade.",
     "description": "The newest ice cream shop to open in Honolulu, offering premium, homemade ice cream, made fresh with natural ingredients in the shop.",
     "owner": "Robert Duong",
     "ownerBackground": "Medical doctor whose passion for ice cream led him to open Castaways Ice Cream",
     "ownerQuote": "We've been wanting to do this forever.",
     "established": "2025",
-    "neighborhood": "Moiliili",
+    "neighborhood": "Mo\u02BBili\u02BBili",
     "city": "Honolulu",
     "state": "Hawaii",
     "phone": "(808) 744-1001",
     "email": "TODO: Not found in research",
     "website": "TODO: No official website found",
-    "yelpRating": 4.5,
-    "yelpReviewCount": 93,
-    "yelpPhotos": 267
+    "yelpRating": 4.4,
+    "yelpReviewCount": 124,
+    "yelpPhotos": 343,
+    "hours": {
+      "monday": "2:00 PM - 10:00 PM",
+      "tuesday": "2:00 PM - 10:00 PM",
+      "wednesday": "2:00 PM - 10:00 PM",
+      "thursday": "2:00 PM - 10:00 PM",
+      "friday": "2:00 PM - Midnight",
+      "saturday": "12:00 PM - Midnight",
+      "sunday": "12:00 PM - 10:00 PM"
+    }
   },
   "features": [
     "30+ rotating flavors made in-house",
@@ -25,7 +34,8 @@
     "Unlimited complimentary samples",
     "Cereal and fruit-infused milkshakes",
     "Local musicians play regularly",
-    "Family-run, friendly atmosphere"
+    "Family-run, friendly atmosphere",
+    "10% student discount for UH Manoa students"
   ],
   "pricing": {
     "keiki": "$3.99",

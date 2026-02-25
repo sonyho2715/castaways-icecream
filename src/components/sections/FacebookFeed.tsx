@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { Send } from "lucide-react";
-import { socialLinks } from "@/data/social";
 
 export default function FacebookFeed() {
   const [email, setEmail] = useState("");
@@ -11,20 +10,23 @@ export default function FacebookFeed() {
     <section id="catering" className="py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Facebook embed */}
+          {/* Catering info card */}
           <div className="bg-white rounded-[40px] p-8 md:p-10">
             <p className="text-[10px] font-bold tracking-[0.2em] uppercase text-primary mb-4">
-              On Facebook
+              Catering &amp; Events
             </p>
-            <div className="rounded-[24px] overflow-hidden bg-slate100 min-h-[400px]">
-              <iframe
-                src={`https://www.facebook.com/plugins/page.php?href=${encodeURIComponent(socialLinks.facebook)}&tabs=timeline&width=500&height=400&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true`}
-                width="100%"
-                height="400"
-                style={{ border: "none", overflow: "hidden" }}
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-                title="Castaways Ice Cream Facebook Page"
-              />
+            <h3 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-black mb-4">
+              Bring the scoops to your event<span className="text-accent">.</span>
+            </h3>
+            <p className="text-secondary/50 text-sm leading-relaxed mb-6">
+              Perfect for birthdays, graduations, corporate events, and any
+              celebration that deserves real, homemade ice cream. Contact us to
+              customize a menu for your next gathering.
+            </p>
+            <div className="space-y-3 text-sm text-secondary/60">
+              <p>&#x1F389; Custom flavor selections</p>
+              <p>&#x1F366; Fresh waffle cones included</p>
+              <p>&#x1F4F1; Call us at <a href="tel:8087441001" className="text-primary font-bold hover:underline">(808) 744-1001</a></p>
             </div>
           </div>
 
@@ -37,7 +39,7 @@ export default function FacebookFeed() {
               <h3 className="font-[family-name:var(--font-playfair)] text-3xl md:text-4xl font-black mb-4">
                 Never miss a
                 <br />
-                new flavor<span className="text-primary">.</span>
+                new flavor<span className="text-accent">.</span>
               </h3>
               <p className="text-white/50 text-sm leading-relaxed mb-10">
                 Get notified about new flavors, special events, and exclusive

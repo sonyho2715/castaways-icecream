@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [hidden, setHidden] = useState(false);
@@ -21,8 +22,17 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="font-[family-name:var(--font-playfair)] font-black text-3xl tracking-tight">
-          CASTAWAYS<span className="text-primary">.</span>
+        <a href="#" className="flex items-center gap-3">
+          <Image
+            src="/images/castaways-logo.jpg"
+            alt="Castaways Ice Cream"
+            width={48}
+            height={48}
+            className="rounded-full object-cover"
+          />
+          <span className="font-[family-name:var(--font-playfair)] font-black text-3xl tracking-tight">
+            CASTAWAYS<span className="text-accent">.</span>
+          </span>
         </a>
         <button
           className="p-2 hover:bg-slate200 rounded-xl transition-colors"

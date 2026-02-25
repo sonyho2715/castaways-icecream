@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { ShoppingBag } from "lucide-react";
 import { NAV_LINKS } from "@/lib/constants";
+import Image from "next/image";
 
 export default function FloatingPillNav() {
   const [visible, setVisible] = useState(false);
@@ -26,9 +27,18 @@ export default function FloatingPillNav() {
       <div className="bg-white/90 backdrop-blur-xl rounded-full shadow-2xl px-8 py-3.5 flex items-center gap-8">
         <a
           href="#"
-          className="font-[family-name:var(--font-playfair)] font-black text-xl"
+          className="flex items-center gap-2"
         >
-          C<span className="text-primary">.</span>
+          <Image
+            src="/images/castaways-logo.jpg"
+            alt="Castaways Ice Cream"
+            width={28}
+            height={28}
+            className="rounded-full object-cover"
+          />
+          <span className="font-[family-name:var(--font-playfair)] font-black text-xl">
+            C<span className="text-accent">.</span>
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-6">

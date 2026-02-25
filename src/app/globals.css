@@ -1,15 +1,17 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #FAF7F2;
-  --color-foreground: #1A1715;
-  --color-primary: #FF5A24;
-  --color-secondary: #1A1715;
-  --color-accent: #00A9E0;
+  --color-background: #F8FBFD;
+  --color-foreground: #2C3E50;
+  --color-primary: #5BAED6;
+  --color-secondary: #2C3E50;
+  --color-accent: #C8956A;
   --color-surface: #FFFFFF;
-  --color-slate100: #F7F5F2;
-  --color-slate200: #EDEAE6;
-  --color-cream: #FAF7F2;
+  --color-slate100: #EFF6FA;
+  --color-slate200: #DFF0F7;
+  --color-cream: #F8FBFD;
+  --color-coral: #E8756A;
+  --color-green: #4A7A52;
 
   --font-heading: "Playfair Display", serif;
   --font-body: "Plus Jakarta Sans", sans-serif;
@@ -26,7 +28,7 @@ body {
 }
 
 ::selection {
-  background: #FF5A24;
+  background: #5BAED6;
   color: white;
 }
 
@@ -35,16 +37,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FAF7F2;
+  background: #F8FBFD;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1A1715;
+  background: #2C3E50;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #FF5A24;
+  background: #5BAED6;
 }
 
 @keyframes marquee {

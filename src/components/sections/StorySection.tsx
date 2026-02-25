@@ -9,8 +9,8 @@ export default function StorySection() {
           <div className="relative">
             <div className="relative aspect-[3/4] rounded-[40px] overflow-hidden">
               <Image
-                src="/images/icecream-shop.jpg"
-                alt="Inside Castaways Ice Cream shop"
+                src="/images/store-interior.jpg"
+                alt="Inside Castaways Ice Cream shop with signature blue walls"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -28,7 +28,7 @@ export default function StorySection() {
             <h2 className="font-[family-name:var(--font-playfair)] text-4xl md:text-6xl font-black mb-8 leading-tight">
               Made in
               <br />
-              Hawaiʻi<span className="text-primary">.</span>
+              Hawai&#x02BB;i<span className="text-accent">.</span>
             </h2>
 
             <div className="space-y-6 text-secondary/60 leading-relaxed">
@@ -37,7 +37,7 @@ export default function StorySection() {
                 Duong, a medical doctor by profession, had always dreamed of
                 creating the perfect scoop. &ldquo;We&apos;ve been wanting to do this
                 forever,&rdquo; he says. When the opportunity came to open a shop in
-                the Moiliili neighborhood on South King Street, he took the leap.
+                the Mo&#x02BB;ili&#x02BB;ili neighborhood on South King Street, he took the leap.
               </p>
               <p>
                 Every batch starts with premium, real ingredients. Real

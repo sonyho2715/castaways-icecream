@@ -21,22 +21,23 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Castaways Ice Cream | Handcrafted in Hawaiʻi",
+  title: "Castaways Ice Cream | Homemade in Honolulu",
   description:
-    "Super-premium homemade ice cream in Moiliili and Waikiki. 30+ rotating flavors, fresh waffle cones, made in small batches with real ingredients.",
+    "Super-premium homemade ice cream in Mo\u02BBili\u02BBili, near UH M\u0101noa. 30+ rotating flavors, fresh waffle cones, made in small batches with real ingredients. 10% student discount.",
   keywords: [
     "ice cream",
     "Honolulu",
     "Hawaii",
     "homemade",
     "Moiliili",
-    "Waikiki",
+    "UH Manoa",
     "waffle cones",
+    "student discount",
   ],
   openGraph: {
-    title: "Castaways Ice Cream | Handcrafted in Hawaiʻi",
+    title: "Castaways Ice Cream | Homemade in Honolulu",
     description:
-      "Super-premium homemade ice cream in Moiliili and Waikiki. 30+ rotating flavors, fresh waffle cones, made in small batches with real ingredients.",
+      "Not store-bought. Not factory-made. Homemade. 30+ rotating flavors, fresh waffle cones, made in small batches with real ingredients.",
     type: "website",
   },
 };

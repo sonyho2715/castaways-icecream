@@ -16,7 +16,7 @@ export default function ReviewMarquee() {
               key={`r1-${i}`}
               className="inline-flex items-center gap-3 mx-8 shrink-0"
             >
-              <Star size={14} className="fill-primary text-primary shrink-0" />
+              <Star size={14} className="fill-accent text-accent shrink-0" />
               <span className="text-white/80 text-sm font-medium">
                 &ldquo;{review.text}&rdquo;
               </span>
@@ -36,7 +36,7 @@ export default function ReviewMarquee() {
               key={`r2-${i}`}
               className="inline-flex items-center gap-3 mx-8 shrink-0"
             >
-              <Star size={14} className="fill-primary text-primary shrink-0" />
+              <Star size={14} className="fill-accent text-accent shrink-0" />
               <span className="text-white/80 text-sm font-medium">
                 &ldquo;{review.text}&rdquo;
               </span>

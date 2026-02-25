@@ -6,7 +6,7 @@ export default function ReviewCard({ review }: { review: Review }) {
     <div className="bg-white rounded-[24px] p-6 hover:shadow-lg transition-shadow">
       <div className="flex items-center gap-1 mb-3">
         {[...Array(review.rating)].map((_, i) => (
-          <Star key={i} size={14} className="fill-primary text-primary" />
+          <Star key={i} size={14} className="fill-accent text-accent" />
         ))}
       </div>
       <p className="text-sm text-secondary/70 italic leading-relaxed mb-4">

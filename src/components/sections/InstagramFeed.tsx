@@ -3,12 +3,12 @@ import { Instagram } from "lucide-react";
 import { socialLinks } from "@/data/social";
 
 const feedImages = [
-  { src: "/images/hero-icecream.jpg", alt: "Colorful ice cream cone" },
-  { src: "/images/flavors/matcha.jpg", alt: "Matcha ice cream" },
-  { src: "/images/flavors/birthday-cake.jpg", alt: "Birthday cake flavor" },
-  { src: "/images/scoop-close.jpg", alt: "Close up scoop" },
-  { src: "/images/flavors/chocolate.jpg", alt: "Chocolate ice cream" },
-  { src: "/images/waffle-cone.jpg", alt: "Fresh waffle cone" },
+  { src: "/images/yelp/photo-10-food-pandan.jpg", alt: "Pandan coconut ice cream" },
+  { src: "/images/yelp/photo-11-food-matcha.jpg", alt: "Matcha ice cream" },
+  { src: "/images/yelp/photo-01-food-cookies-cream.jpg", alt: "Cookies and cream" },
+  { src: "/images/yelp/photo-06-food-banana-choc.jpg", alt: "Banana chocolate scoops" },
+  { src: "/images/yelp/photo-13-milkshake.jpg", alt: "Coffee chocolate milkshake" },
+  { src: "/images/yelp/photo-09-food-scoops-2.jpg", alt: "Ice cream scoops" },
 ];
 
 export default function InstagramFeed() {
