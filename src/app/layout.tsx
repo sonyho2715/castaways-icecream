@@ -22,6 +22,7 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://castawaysicecream.vercel.app'),
   title: "Castaways Ice Cream | Homemade in Honolulu",
   description:
     "Super-premium homemade ice cream in Mo\u02BBili\u02BBili, near UH M\u0101noa. 30+ rotating flavors, fresh waffle cones, made in small batches with real ingredients. 10% student discount.",
