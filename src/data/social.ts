@@ -1,12 +1,20 @@
 export const socialLinks = {
   instagram: "https://www.instagram.com/castawaysicecream/",
   instagramHandle: "@castawaysicecream",
+  instagramPosts: [
+    "https://www.instagram.com/p/DVHrjqdgT1S/",
+    "https://www.instagram.com/p/DVCTOZUAsXY/",
+    "https://www.instagram.com/p/DU4fJucFVQg/",
+    "https://www.instagram.com/p/DU1bSgFgFn0/",
+    "https://www.instagram.com/p/DU1OR8GgU3a/",
+  ],
   threads: "https://www.threads.com/@castawaysicecream",
   tiktok: "https://www.tiktok.com/@castawaysicecream",
   yelp: "https://www.yelp.com/biz/castaways-ice-cream-honolulu",
-  facebook: "", // Not confirmed
-  google:
-    "https://maps.google.com/?q=2346+South+King+St+Honolulu+HI",
+  facebook: "https://www.facebook.com/CastawaysIceCream/",
+  facebookPageId: "CastawaysIceCream",
+  email: "Aloha@CastawaysIceCream.com",
+  google: "https://maps.google.com/?q=2346+South+King+St+Honolulu+HI",
 } as const;
 
 export const pressMentions = [

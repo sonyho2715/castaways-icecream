@@ -1,14 +1,14 @@
 import Hero from "@/components/sections/Hero";
 import TodaysFlavors from "@/components/sections/TodaysFlavors";
 import ReviewMarquee from "@/components/sections/ReviewMarquee";
+import PressStrip from "@/components/sections/PressStrip";
 import WhyPeopleLoveUs from "@/components/sections/WhyPeopleLoveUs";
 import FlavorGrid from "@/components/sections/FlavorGrid";
 import StorySection from "@/components/sections/StorySection";
 import LocationCards from "@/components/sections/LocationCards";
-import InstagramFeed from "@/components/sections/InstagramFeed";
-import FacebookFeed from "@/components/sections/FacebookFeed";
-import ShippingBenefits from "@/components/sections/ShippingBenefits";
+import SocialFeed from "@/components/sections/SocialFeed";
 import Newsletter from "@/components/sections/Newsletter";
+import ShippingBenefits from "@/components/sections/ShippingBenefits";
 
 export default function Home() {
   return (
@@ -16,12 +16,12 @@ export default function Home() {
       <Hero />
       <TodaysFlavors />
       <ReviewMarquee />
+      <PressStrip />
       <WhyPeopleLoveUs />
       <FlavorGrid />
       <StorySection />
       <LocationCards />
-      <InstagramFeed />
-      <FacebookFeed />
+      <SocialFeed />
       <Newsletter />
       <ShippingBenefits />
     </main>

@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Facebook, Mail } from "lucide-react";
 import { socialLinks } from "@/data/social";
 import { locations } from "@/data/locations";
 import { NAV_LINKS } from "@/lib/constants";
@@ -46,6 +46,15 @@ export default function Footer() {
                 <Instagram size={20} />
               </a>
               <a
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/40 hover:text-primary transition-colors"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
                 href={socialLinks.yelp}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,15 +62,14 @@ export default function Footer() {
               >
                 Yelp
               </a>
-              <a
-                href={socialLinks.tiktok}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white/40 hover:text-primary transition-colors text-xs font-bold tracking-wider uppercase"
-              >
-                TikTok
-              </a>
             </div>
+            <a
+              href={`mailto:${socialLinks.email}`}
+              className="mt-4 flex items-center gap-2 text-white/40 hover:text-primary transition-colors text-xs"
+            >
+              <Mail size={14} />
+              {socialLinks.email}
+            </a>
           </div>
 
           {/* Column 2: Navigation */}
