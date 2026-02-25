@@ -1,0 +1,65 @@
+{
+  "business": {
+    "name": "Castaways Ice Cream",
+    "tagline": "Super-premium homemade ice cream",
+    "description": "The newest ice cream shop to open in Honolulu, offering premium, homemade ice cream, made fresh with natural ingredients in the shop.",
+    "owner": "Robert Duong",
+    "ownerBackground": "Medical doctor whose passion for ice cream led him to open Castaways Ice Cream",
+    "ownerQuote": "We've been wanting to do this forever.",
+    "established": "2025",
+    "neighborhood": "Moiliili",
+    "city": "Honolulu",
+    "state": "Hawaii",
+    "phone": "(808) 744-1001",
+    "email": "TODO: Not found in research",
+    "website": "TODO: No official website found",
+    "yelpRating": 4.5,
+    "yelpReviewCount": 93,
+    "yelpPhotos": 267
+  },
+  "features": [
+    "30+ rotating flavors made in-house",
+    "Fresh waffle cones baked daily",
+    "Blast freezer for ultra-creamy texture",
+    "Premium real ingredients (real matcha, actual cookies, genuine mango)",
+    "Unlimited complimentary samples",
+    "Cereal and fruit-infused milkshakes",
+    "Local musicians play regularly",
+    "Family-run, friendly atmosphere"
+  ],
+  "pricing": {
+    "keiki": "$3.99",
+    "regular": "$5.99",
+    "large": "$8.49",
+    "sauce": "$1.49",
+    "milkshake": "$9.75"
+  },
+  "sauces": [
+    "Ghirardelli chocolate",
+    "Ghirardelli caramel",
+    "Reese's peanut butter"
+  ],
+  "milkshakeCereals": [
+    "Cocoa Puffs",
+    "Lucky Charms",
+    "Reese's Puffs"
+  ],
+  "press": [
+    {
+      "outlet": "Aloha State Daily",
+      "title": "Moiliili has a new ice cream shop",
+      "date": "April 14, 2025",
+      "url": "https://alohastatedaily.com/2025/04/14/moiliili-has-a-new-ice-cream-shop/"
+    },
+    {
+      "outlet": "KHON2",
+      "title": "Castaways Ice Cream will satisfy your sweet tooth",
+      "url": "https://www.khon2.com/good-2-grind/castaways-ice-cream-will-satisfy-your-sweet-tooth/"
+    },
+    {
+      "outlet": "Honolulu Magazine",
+      "title": "Ultimate Guide to 12 Luscious Local Ice Cream Shops",
+      "url": "https://www.honolulumagazine.com/?p=653557"
+    }
+  ]
+}

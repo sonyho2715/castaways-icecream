@@ -1,0 +1,55 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { ShoppingBag } from "lucide-react";
+import { NAV_LINKS } from "@/lib/constants";
+
+export default function FloatingPillNav() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setVisible(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div
+      className={`fixed top-6 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 ${
+        visible
+          ? "translate-y-0 opacity-100"
+          : "-translate-y-full opacity-0 pointer-events-none"
+      }`}
+    >
+      <div className="bg-white/90 backdrop-blur-xl rounded-full shadow-2xl px-8 py-3.5 flex items-center gap-8">
+        <a
+          href="#"
+          className="font-[family-name:var(--font-playfair)] font-black text-xl"
+        >
+          C<span className="text-primary">.</span>
+        </a>
+
+        <div className="hidden md:flex items-center gap-6">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-[10px] uppercase tracking-widest font-bold text-secondary hover:text-primary transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        <button
+          className="p-1.5 hover:text-primary transition-colors"
+          aria-label="Shopping bag"
+        >
+          <ShoppingBag size={18} strokeWidth={2} />
+        </button>
+      </div>
+    </div>
+  );
+}
