@@ -1,6 +1,9 @@
 import { Resend } from 'resend'
 
-export const resend = new Resend(process.env.RESEND_API_KEY)
+function getResend() {
+  if (!process.env.RESEND_API_KEY) return null
+  return new Resend(process.env.RESEND_API_KEY)
+}
 
 export async function sendCateringNotification(inquiry: {
   name: string
@@ -11,7 +14,8 @@ export async function sendCateringNotification(inquiry: {
   guestCount: string
   message?: string
 }) {
-  if (!process.env.RESEND_API_KEY) return
+  const resend = getResend()
+  if (!resend) return
 
   await resend.emails.send({
     from: 'Castaways Website <noreply@castawaysicecream.com>',
@@ -38,7 +42,8 @@ export async function sendCakeOrderNotification(order: {
   flavors: string
   dedication?: string
 }) {
-  if (!process.env.RESEND_API_KEY) return
+  const resend = getResend()
+  if (!resend) return
 
   await resend.emails.send({
     from: 'Castaways Website <noreply@castawaysicecream.com>',
